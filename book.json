@@ -1,0 +1,14 @@
+{
+    "root": ".",
+    "title": "Migrating to Microservice Databases From Relational Monilith to Distributed Data",
+    "author": "MSA研究会",
+    "language": "ja",
+    "styles": {
+        "website": "styles/website.css",
+        "pdf": "styles/pdf.css"
+    },
+    "plugins": ["-sharing","hide-published-with"],
+    "pdf": {
+        "fontSize": 16
+    }
+}

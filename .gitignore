@@ -1,0 +1,15 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Optional npm cache directory
+/node_modules/
+.npm
+
+# Gitbook
+/_book/
+book.pdf
+
+# VsCode
+/.vscode/

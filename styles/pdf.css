@@ -1,0 +1,25 @@
+body {
+  font-family: 'IPAPGothic','Noto Sans';
+}
+
+h1 {
+  color: #3C79BF;
+}
+
+h2 {
+  color: #3C79BF;
+}
+
+h3 {
+  text-align: right;
+  color: #3C79BF;
+  border-bottom: 1px solid #ff1493;
+}
+
+h4 {
+  color: #808080;
+}
+
+p.indent-1 {
+  padding-left: 2em;
+}
