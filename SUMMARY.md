@@ -8,7 +8,11 @@
 
 * [3. Evolving Your Relational Database](03_EvolvingYourRelationalDatabase/README.md)
 
-* [4. CRUD and CQRS](04_CrudAndCqrs/README.md)
+* [4. CRUDとCQRS](04_CrudAndCqrs/README.md)
+  * [整合性モデル](04_CrudAndCqrs/ConsistencyModel.md)
+  * [CRUD](04_CrudAndCqrs/CRUD.md)
+  * [CQRS](04_CrudAndCqrs/CQRS.md)
+  * [Event Sourcing](04_CrudAndCqrs/EventSourcing.md)
 
 * [5. Integration Strategies](05_IntegrationStrategies/README.md)
 
