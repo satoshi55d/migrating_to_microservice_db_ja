@@ -4,7 +4,7 @@
 適切なプロセスを歩んでいることを確かめるために、絶えず自身の行動を評価する必要があります。
 よく知られているPlan-Do-Check-Act（PDCA）プロセスでさえフィードバックループの変形です。
 
-私たちが日々の生活で行うすべてのことと同様に、ソフトウェアにおいて、フィードバックループ間隔が長くなればなるほど、成果物は悪化していきます。
+私たちが日々の生活で行うすべてのことと同様に、ソフトウェアにおいて、フィードバックループ間隔が長くなればなるほど、結果は悪化していきます。
 これは量と期間の双方において、脳に情報を保持できる容量が限られているために起こります。
 
 私たちがコーディングツールとして使っていたのは、黒い背景と緑色のフォントを備えたテキストエディタでした。
@@ -13,12 +13,14 @@
 この場合のリードタイム(作業の開始から終了までの時間)は長すぎたのです。
 私たちが使っているIDEに即時構文ハイライトと即時コンパイル機能が追加された時にようやく上記の問題を改善することができました。
 
-We can say the same thing for testing.
-We used to have a dedicated team for manual testing, and the lead time between committing something and knowing if we broke anything was days or weeks.
-Today, we have automated testing tools for unit testing, integration testing, acceptance testing, and so on.
-We improved because now we can simply run a build on our own machines and check if we broke code somewhere else in the application.
+同じことがテストにおいても言えます。
+私たちは手作業によるテストのための専任チームを設けていました。
+何らかのコードをコミットしてから、不具合が発生していることに気づくまでのリードタイムは数日または数週間でした。
+今では、単体テスト、統合テスト、受入れテストなどのための自動テストツールがあります。
+それらによって上記の問題は改善されました。
+自分のマシン上でビルドを実行し、アプリケーション内の別の箇所のコードに不具合が起きていないかを検証することができるようになったためです。
 
-These are some of the numerous examples of how reducing the lead time generated better results in the software development process.
-In fact, we might consider that all the major improvements we had with respect to process and tools over the past 40 years were targeting the improvement of the feedback loop in one way or another.
+これらはリードタイムの短縮がソフトウェア開発プロセスにおいてより良い結果を生み出す数多くの例の一部です。
+実際、過去40年間のプロセスとツールに関して私たちが行ってきた主要な改善は、何らかの方法でフィードバックループの改善を狙っていたと考えられます。
 
-The current improvement areas that we’re discussing for the feed‐ back loop are DevOps and microservices.
+これよりフィードバックループの改善のために議論する内容は、DevOpsとマイクロサービスです。

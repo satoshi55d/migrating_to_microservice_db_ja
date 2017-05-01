@@ -3,7 +3,7 @@
 * [Foreword](README.md)
 
 * [1. 序論](01_Introduction/README.md)
-  * [The Feedback Loop](01_Introduction/TheFeedbackLoop.md)
+  * [フィードバックループ](01_Introduction/TheFeedbackLoop.md)
   * [DevOps](01_Introduction/DevOps.md)
   * [Why Microservices?](01_Introduction/WhyMicroservices.md)
   * [Strangler Pattern](01_Introduction/StranglerPattern.md)
