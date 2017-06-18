@@ -5,7 +5,7 @@
 * [1. 序論](01_Introduction/README.md)
   * [フィードバックループ](01_Introduction/TheFeedbackLoop.md)
   * [DevOps](01_Introduction/DevOps.md)
-  * [Why Microservices?](01_Introduction/WhyMicroservices.md)
+  * [なぜマイクロサービスなのか](01_Introduction/WhyMicroservices.md)
   * [Strangler Pattern](01_Introduction/StranglerPattern.md)
   * [Domain-Driven Design](01_Introduction/DomainDrivenDesign.md)
   * [Microservices Characteristics](01_Introduction/MicroservicesCharacteristics.md)
