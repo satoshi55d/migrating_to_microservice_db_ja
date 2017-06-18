@@ -11,26 +11,26 @@ NetflixやAmazonのドメインモデルを過小評価したくはありませ�
 ですから、大多数の開発者にとってマイクロサービスは通常スケーラビリティに関するものではありません。
 結局のところ、リードタイムを改善し、リリースのバッチサイズを縮小することがすべてなのです。
 
-But we have DevOps that shares the same goals, so why are we even discussing microservices to achieve this?
-Maybe your development team is so big and your codebase is so huge that it’s just too difficult to change anything without messing up a dozen different points in your application.
-It’s difficult to coordinate work between people in a huge, tightly coupled, and entangled codebase.
+しかし、DevOpsも同じ目標を共有しています。なぜ、この目標を達成するためにマイクロサービスについても議論するのでしょうか。
+おそらく開発チームやコードベースが非常に大規模なので、アプリケーションの異なる部分を何ヶ所も変更しないまま修正を行うのは難しいでしょう。
+巨大で密結合かつ複雑に絡み合ったコードベースの中にいる人たちの間で仕事を調整することも困難です。
 
-With microservices, we’re trying to split a piece of this huge monolithic codebase into a smaller, well-defined, cohesive, and loosely coupled artifact.
-And we’ll call this piece a microservice.
-If we can identify some pieces of our codebase that naturally change together and apart from the rest, we can separate them into another artifact that can be released independently from the other artifacts.
-We’ll improve our lead time and batch size because we won’t need to wait for the other pieces to be “ready”;
-thus, we can deploy our microservice into production.
+マイクロサービスによって、この巨大なモノリシックコードベースをより小さく、明確に定義された、凝集性のある、疎結合の成果物に分割しようと試みています。
+そして、分割された部品をマイクロサービスと呼んでいます。
+自然と一緒になって変化し、残りの部分から分離されたコードベースの一部を特定することができれば、それらを他とは別にリリースできる成果物に分離することができます。
+他の部品が「リリース可能状態」になるのを待つ必要がないため、リードタイムとバッチサイズは改善されます。
+このようにして、マイクロサービスを本番環境にデプロイすることができるのです。
 
-#### You Need to Be This Tall to Use Microservices
+#### マイクロサービスにはこれくらいの代価が必要です
 
-Microservices architectures encompasses multiple artifacts, each of which must be deployed into production.
-If you still have issues deploying one single monolith into production, what makes you think that you’ll have fewer problems with multiple artifacts?
-A very mature software deployment pipeline is an absolute requirement for any microservices architecture.
-Some indicators that you can use to assess pipeline maturity are the amount of manual intervention required, the amount of automated tests, the automatic provisioning of environments, and monitoring.
+マイクロサービスアーキテクチャは複数の成果物を包含し、各々が本番環境にデプロイされなければなりません。
+単一のモノリスを本番環境にデプロイする際の問題が残っている場合に、複数の成果物に分けることによってそれらの問題が少なくなると思いますか。
+非常に成熟したソフトウェアデプロイメントパイプラインは、あらゆるマイクロサービスアーキテクチャにとって絶対的要件です。
+パイプラインの成熟度を評価するために使用できる指標には、手作業による介入が必要な量、自動化されたテストの量、環境の自動プロビジョニング、および監視があります。
 
-Distributed systems are difficult.So are people.
-When we’re dealing with microservices, we must be aware that we’ll need to face an entire new set of problems that distributed systems bring to the table.
-Tracing, monitoring, log aggregation, and resilience are some of problems that you don’t need to deal with when you work on a monolith.
+分散されたシステムというものは難しいものです。人々もそうです。
+マイクロサービスを扱う際には、分散されたシステムがテーブルにもたらす新たな問題のすべてに向き合う必要があることを認識しなければなりません。
+トレース、モニタリング、ログ集約、フォールトトレランス等は、モノリスで作業するときには対処する必要のない問題です。
 
-Microservices architectures come with a high toll, which is worth paying if the problems with your monolithic approaches cost you more.
-Monoliths and microservices are different architectures, and architectures are all about trade-off.
+マイクロサービスアーキテクチャには大きな代価が付随しますが、モノリシックアプリケーションの問題のせいでそれ以上のコストがかかっていれば、支払う価値があります。
+モノリスとマイクロサービスは異なるアーキテクチャであり、アーキテクチャはすべてトレードオフです。
