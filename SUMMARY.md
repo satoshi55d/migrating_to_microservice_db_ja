@@ -7,7 +7,7 @@
   * [DevOps](01_Introduction/DevOps.md)
   * [なぜマイクロサービスなのか](01_Introduction/WhyMicroservices.md)
   * [絞め殺しパターン](01_Introduction/StranglerPattern.md)
-  * [Domain-Driven Design](01_Introduction/DomainDrivenDesign.md)
+  * [ドメイン駆動設計](01_Introduction/DomainDrivenDesign.md)
   * [Microservices Characteristics](01_Introduction/MicroservicesCharacteristics.md)
 
 * [2. Zero Downtime](02_ZeroDowntime/README.md)
