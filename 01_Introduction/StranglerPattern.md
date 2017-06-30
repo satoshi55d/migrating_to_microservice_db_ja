@@ -18,16 +18,18 @@
 やがて絞め殺しの木は宿主の木よりも大きくなり、時には宿主を死滅させることさえあります。
 完全にこじつけだと思いますが、私たちは皆、モノリスという獣を殺したいという深い欲望を心の中に隠しています。
 
-Having a stable monolith is a good starting point because one of the hardest things in software is the identification of boundaries between the domain model—things that change together, and things that change apart.
-Create wrong boundaries and you’ll be doomed with the consequences of cascading changes and bugs.
-And boundary identification is usually something that we mature over time.
-We refactor and restructure our system to accommodate the acquired boundary knowledge.
-And it’s much easier to do that when you have a single codebase to deal with, for which our modern IDEs will be able to refactor and move things automatically.
-Later you’ll be able to use these established boundaries for your microservices.
-That’s why we really enjoy the strangler pattern: you start small with microservices and grow around a monolith.
-It sounds like the wisest and safest approach for evolving enterprise application software.
+ドメインモデルは統合されたり分離されたりするもので、その境界を識別するのはソフトウェアの世界で最も難しいことの1つです。
+そのため、しっかりとしたモノリスを作るのは良い出発点です。
+間違った境界を設けてしまうと、次々と発生する変更やバグに惑わされることになるでしょう。
+境界の識別は、通常は時間の経過とともに成熟するものです。
+時間をかけて得た境界知識に対応するためにシステムをリファクタリングし、再構築するのです。
+そして、最近のIDEツールでは自動的にリファクタリングや移動を行うことができるため、対処するコードベースが1つであればより簡単に行うことができます。
+のちに確立された境界をマイクロサービスに適用することができます。
+だからこそ、絞め殺しパターンによって利益を得られます。マイクロサービスで小さく始めて、モノリスの周りで大きくしていくのです。
+日々進化するエンタープライズアプリケーションソフトウェアにとって、最も賢明で安全なアプローチだと思います。
 
-The usual candidates for the first microservices in your new architecture are new features of your system or changing features that are peripheral to the application’s core.
-In time, your microservices architecture will grow just like a strangler fig tree, but we believe that the reality of most companies will still be one, two, or maybe even up to half-dozen microservices coexisting around a monolith.
+新しいアーキテクチャにおいて、よくマイクロサービスの第一候補とされるのは、システムの新機能またはコア機能の周辺機能変更です。
+時間が経つに連れて、マイクロサービスアーキテクチャは絞め殺しの木のように成長しますが、
+ほとんどの企業の現実は、依然として1つか2つ、あるいは多分最大で6つまでのマイクロサービスがモノリスと共存している状態だと考えます。
 
-The challenge of choosing which piece of software is a good candidate for a microservice requires a bit of Domain-Driven Design knowledge, which we’ll cover in the next section.
+どのソフトウェア部品がマイクロサービスに適しているかを選択する難題を乗り越えるには、次のセクションで説明するドメイン駆動設計の知識が少しだけ必要です。
