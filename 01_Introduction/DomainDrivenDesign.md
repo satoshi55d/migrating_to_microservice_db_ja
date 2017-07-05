@@ -1,26 +1,26 @@
 ## ドメイン駆動設計
 
-It’s interesting how some methodologies and techniques take years to “mature” or to gain awareness among the general public.
-And Domain-Driven Design (DDD) is one of these very useful techniques that is becoming almost essential in any discussion about microservices.
-Why now?
-Historically we’ve always been trying to achieve two synergic properties in software design: high cohesion and low coupling.
-We aim for the ability to create boundaries between entities in our model so that they work well together and don’t propagate changes to other entities beyond the boundary.
-Unfortunately, we’re usually especially bad at that.
+何かしらの方法論やテクニックが何年もかけて ”成熟”したり、一般の人々の間で意識されたりするようになるのは興味深いことです。
+ドメイン駆動設計（DDD）は、これらの非常に有益なテクニックの1つで、マイクロサービスに関するあらゆる議論においてほぼ必須となっています。
+なぜ今になって注目されているのでしょうか。
+歴史的に、我々はソフトウェア設計において、常に凝集性と疎結合の2つの相乗的な特性を達成しようとしてきました。
+モデル内のエンティティ間の境界を作成し、各境界がうまく作用しつつ、境界を越えて他のエンティティに変更を伝播させないようにします。
+残念ながら、いつもそこで大失敗してしまいます。
 
-DDD is an approach to software development that tackles complex systems by mapping activities, tasks, events, and data from a business domain to software artifacts.
-One of the most important con‐ cepts of DDD is the bounded context, which is a cohesive and well- defined unit within the business model in which you define the boundaries of your software artifacts.
+DDDは、ビジネスドメインのアクティビティ、タスク、イベント、データをソフトウェア成果物にマッピングすることによって、複雑なシステムに取り組むソフトウェア開発のアプローチです。
+DDDの最も重要な概念の1つは境界づけられたコンテキストです。
+ビジネスモデル内で凝集性のある明確に定義された単位のことを指し、その中でソフトウェア成果物の境界線を定めます。
 
-From a domain model perspective, microservices are all about boundaries: we’re splitting a specific piece of our domain model that can be turned into an independently releasable artifact.
-With a badly defined boundary, we will create an artifact that depends too much on information confined in another microservice.
-We will also create another operational pain: whenever we make modifications in one artifact, we will need to synchronize these changes with another artifact.
+ドメインモデルの観点からは、マイクロサービスはすべて境界線です。つまり、独立してリリース可能な成果物に変換できる特定のドメインモデルに分割します。
+境界の定義がひどい場合、別のマイクロサービスでしか使われない情報にかなり依存する成果物が作られてしまうでしょう。
+それだけではなく運用でのダメージも発生します。ある成果物に変更を加えるたびに、別の成果物にそれらの変更を同期させる必要があります。
 
-We advocate for the monolith-first approach because it allows you to mature your knowledge around your business domain model first.
-DDD is such a useful technique for identifying the bounded contexts of your domain model: things that are grouped together and achieve high cohesion and low coupling.
-From the beginning, it’s very difficult to guess which parts of the system change together and which ones change separately.
-However, after months, or more likely years, developers and business analysts should have a better picture of the evolution cycle of each one of the bounded contexts.
+我々がモノリスファーストを提唱するのは、最初に業務ドメインモデルに関する知識を成熟させることができるからです。
+DDDは、ドメインモデルの境界づけられたコンテキスト（グループ化され、高凝集性と疎結合を実現するもの）を識別するのに便利な手法です。
+最初からシステムのどの部分が一緒に変化し、どの部分が独立して変化するかを推測するのは非常に困難です。
+しかしながら、数か月後あるいは数年経てば、開発者やビジネスアナリストは、それぞれの境界づけられたコンテキストの進化サイクルをよりよく把握すべきです。
 
-These are the ideal candidates for microservices extraction, and that will be the starting point for the strangling of our monolith.
+これらはマイクロサービスの抽出のために理想的な候補であり、モノリスを絞め殺す出発点になります。
 
-NOTE
-To learn more about DDD, check out Eric Evan’s book,
-Domain-Driven Design: Tackling Complexity in the Heart of So ware, and Vaughn Vernon’s book, Implementing Domain-Driven Design.
+<p class="note">NOTE</p>
+DDDについてより詳細に学ぶ場合は、エリック・エヴァンスの書籍『エリック・エヴァンスのドメイン駆動設計』を確認してください。

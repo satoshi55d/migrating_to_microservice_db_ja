@@ -23,3 +23,8 @@ h4 {
 p.indent-1 {
   padding-left: 2em;
 }
+
+p.note {
+  background-color:#3C79BF;
+  color:white;
+}
