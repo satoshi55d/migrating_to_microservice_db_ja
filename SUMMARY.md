@@ -8,7 +8,7 @@
   * [なぜマイクロサービスなのか](01_Introduction/WhyMicroservices.md)
   * [絞め殺しパターン](01_Introduction/StranglerPattern.md)
   * [ドメイン駆動設計](01_Introduction/DomainDrivenDesign.md)
-  * [Microservices Characteristics](01_Introduction/MicroservicesCharacteristics.md)
+  * [マイクロサービスの特徴](01_Introduction/MicroservicesCharacteristics.md)
 
 * [2. Zero Downtime](02_ZeroDowntime/README.md)
 
