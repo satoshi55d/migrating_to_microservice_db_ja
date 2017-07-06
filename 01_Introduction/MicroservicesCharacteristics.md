@@ -1,38 +1,38 @@
 ## マイクロサービスの特徴
 
-James Lewis and Martin Fowler provided a reasonable common set of characteristics that fit most of the microservices architectures:
+James LewisとMartin Fowlerは、[ほとんどのマイクロサービスアーキテクチャに当てはまる共通の特性](https://www.martinfowler.com/articles/microservices.html)を提唱しました。
 
-• Componentization via services
-• Organized around business capabilities
-• Products not projects
-• Smart endpoints and dumb pipes
-• Decentralized governance
-• Decentralized data management
-• Infrastructure automation
-• Design for failure
-• Evolutionary design
+* サービスによるコンポーネント化
+* ビジネスケイパビリティに基づいた組織化
+* プロジェクトではなくプロダクト
+* スマートエンドポイントとダムパイプ
+* 分散ガバナンス
+* 分散データ管理
+* インフラストラクチャの自動化
+* 障害設計
+* 進化的設計
 
-All of the aforementioned characteristics certainly deserve their own careful attention.
-But after researching, coding, and talking about microservices architectures for a couple of years, I have to admit that the most common question that arises is this:
+前述の特性は確かにすべて注目すべきです。
+しかし、数年かけてマイクロサービスアーキテクチャの研究、コーディング、および議論をしてきて、最も一般的な問題は次の事項であることを認めざるを得ません。
 
-How do I evolve my monolithic legacy database?
+    モノリシックなレガシーデータベースをどのように進化させるのか。
 
-This question provoked some thoughts with respect to how enterprise application developers could break their monoliths more effectively.
-So the main characteristic that we’ll be discussing throughout this book is Decentralized Data Management.
-Trying to simplify it to a single-sentence concept, we might be able to state that:
+この質問によって、エンタープライズアプリケーション開発者がモノリスをより効果的に破壊する方法についていくつかの考え方が生まれました。
+そのため、この本では分散データ管理について主に議論します。
+一言でその考え方を表現するならば、次のように述べることができるでしょう。
 
-Each microservice should have its own separate database.
+    マイクロサービスごとに独立したデータベースを保有するべきである。
 
-This statement comes with its own challenges.
-Even if we think about greenfield projects, there are many different scenarios in which we require information that will be provided by another service.
-Experience has taught us that relying on remote calls (either some kind of Remote Procedure Call [RPC] or REST over HTTP) usually is not performant enough for data-intensive use cases, both in terms of throughput and latency.
+この発言には、課題が潜んでいます。
+新規開発プロジェクトの場合でも、別のサービスによって提供される情報が必要なシナリオは数多くあります。
+経験上、リモートプロシージャコール(RPC)またはREST等のリモート呼出しに依存すると、データ集約型のユースケースではスループットとレイテンシの両方で十分な性能が得られません。
 
-This book is all about strategies for dealing with your relational database.
-Chapter 2 addresses the architectures associated with deployment.
-The zero downtime migrations presented in Chapter 3 are not exclusive to microservices, but they’re even more important in the context of distributed systems.
-Because we’re dealing with distributed systems with information scattered through different artifacts interconnected via a network, we’ll also need to deal with how this information will converge.
-Chapter 4 describes the difference between consistency models: Create, Read, Update, and Delete (CRUD); and Command and Query Responsibility Segregation (CQRS).
-The final topic, which is covered in Chapter 5, looks at how we can integrate the information between the nodes of a microservices architecture.
+この本で述べる内容はすべてリレーショナルデータベースに対処するための戦略です。
+第2章ではデプロイメントに関連するアーキテクチャについて説明します。
+第3章で紹介するゼロダウンタイム移行は、マイクロサービスに限った話ではありませんが、分散システムではさらに重要です。
+ネットワークを介して相互接続された異なる成果物によって分断された情報を持つ分散システムを扱っているため、情報をどのように収束させるかについても対処する必要があります。
+第4章では整合性モデルの違いについて説明します。作成、読み取り、更新、および削除(CRUD)と、CQRS(Command and Query Responsibility Segregation)です。
+第5章で扱う最後のトピックでは、マイクロサービスアーキテクチャのノード間でどのように情報を統合できるかについて説明します。
 
 #### What About NoSQL Databases?
 
