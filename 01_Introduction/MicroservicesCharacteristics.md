@@ -34,16 +34,16 @@ James LewisとMartin Fowlerは、[ほとんどのマイクロサービスアー�
 第4章では整合性モデルの違いについて説明します。作成、読み取り、更新、および削除(CRUD)と、CQRS(Command and Query Responsibility Segregation)です。
 第5章で扱う最後のトピックでは、マイクロサービスアーキテクチャのノード間でどのように情報を統合できるかについて説明します。
 
-#### What About NoSQL Databases?
+#### NoSQLデータベースはどうなの？
 
-Discussing microservices and database types different than relational ones seems natural.
-If each microservice must have is own separate database, what prevents you from choosing other types of technology?
-Perhaps some kinds of data will be better handled through key-value stores, or document stores, or even flat files and git repositories.
+マイクロサービスやリレーショナルなものとは異なるデータベース型について議論するのは当然のことです。
+各マイクロサービスに独立したデータベースを保有しなければならない場合に、別のテクノロジーの選択を妨げられることがあるでしょうか。
+おそらく、キーバリューストアやドキュメントストア、フラットファイルやgitリポジトリ等を使って処理する方がよいデータもあると思います。
 
-There are many different success stories about using NoSQL databases in different contexts, and some of these contexts might fit your current enterprise context, as well.
-But even if it does, we still recommend that you begin your microservices journey on the safe side: using a relational database.
-First, make it work using your existing relational database.
-Once you have successfully finished implementing and integrating your first microservice, you can decide whether you (or) your project will be better served by another type of database technology.
+NoSQLデータベースを様々なコンテキストで使用する成功事例は色々ありますが、これらの一部は現在のエンタープライズコンテキストにも適合します。
+しかし、たとえそうであっても、マイクロサービス化に向けて安全に始めることをお勧めします。つまり、リレーショナルデータベースを使用することです。
+まずは、既存のリレーショナルデータベースを使ってうまく動作するようにしてください。
+最初のマイクロサービス実装・統合が問題なく完了したら、別のデータベース技術の方がより良いかどうか判断することが可能です。
 
-The microservices journey is difficult and as with any change, you’ll have better chances if you struggle with one problem at a time.
-It doesn’t help having to simultaneously deal with a new thing such as microservices and new unexpected problems caused by a different database technology.
+マイクロサービスへの道は険しいですが、どんな変更においても1つずつ問題を苦労して乗り越えることで、よりチャンスが得られます。
+マイクロサービス等の新しいものと異なるデータベース技術による未知の問題を同時に対処する必要はありません。
