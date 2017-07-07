@@ -10,7 +10,13 @@
   * [ドメイン駆動設計](01_Introduction/DomainDrivenDesign.md)
   * [マイクロサービスの特徴](01_Introduction/MicroservicesCharacteristics.md)
 
-* [2. Zero Downtime](02_ZeroDowntime/README.md)
+* [2. ゼロダウンタイム](02_ZeroDowntime/README.md)
+  * [Zero Downtime and Microservices](02_ZeroDowntime/ZeroDowntimeAndMicroservices.md)
+  * [Deployment Architectures](02_ZeroDowntime/DeploymentArchitectures.md)
+  * [Blue/Green Deployment](02_ZeroDowntime/BlueGreenDeployment.md)
+  * [Canary Deployment](02_ZeroDowntime/CanaryDeployment.md)
+  * [A/B Testing](02_ZeroDowntime/ABTesting.md)
+  * [Application State](02_ZeroDowntime/ApplicationState.md)
 
 * [3. Evolving Your Relational Database](03_EvolvingYourRelationalDatabase/README.md)
 
