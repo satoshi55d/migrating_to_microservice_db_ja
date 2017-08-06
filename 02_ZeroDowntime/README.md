@@ -2,17 +2,19 @@
 
 # ゼロダウンタイム
 
-Any improvement that you can make toward the reduction of your batch size that consequently leads to a faster feedback loop is important.
-When you begin this continuous improvement, sooner or later you will reach a point at which you can no longer reduce the time between releases due to your maintenance window—that short timeframe during which you are allowed to drop the users from your system and perform a software release.
+最終的により早いフィードバックループに繋がるようなバッチサイズの縮小に向けた改善が重要です。
+継続的なこのような改善を始めることで、遅かれ早かれメンテナンスウィンドウ(ユーザをシステムから切り離し、ソフトウェアリリースを行うことができる短い時間枠)によってリリース間の時間をこれ以上短縮することができなくなるでしょう。
 
-Maintenance windows are usually scheduled for the hours of the day when you have the least concern disrupting users who are accessing your application.
-This implies that you will mostly need to perform your software releases late at night or on weekends.
-That’s not what we, as the people responsible for owning it in production, would consider sustainable.
-We want to reclaim our lives, and if we are now supposed to release software even more often, certainly it’s not sustainable to do it every night of the week.
+メンテナンスウィンドウは通常、アプリケーションにアクセスしているユーザーが切断される懸念が最も少ない時間帯にスケジュールされます。
+つまり、ほとんどの場合は夜遅くまたは週末にソフトウェアリリースを行う必要があることを意味しています。
+それは、我々のような本番環境でアプリケーションを所有する責任のある人々が持続可能であると考えるようなものではありません。
+私たちは自身の生活を取り戻したいと思っています。
+今はより頻繁にソフトウェアをリリースするはずですが、毎週夜間にリリースするのは間違いなく持続可能ではありません。
 
-Zero downtime is the property of your software deployment pipeline by which you release a new version of your software to your users without disrupting their current activities—or at least minimizing the extent of potential disruptions.
+ゼロダウンタイムは、ソフトウェアデプロイメントパイプラインの特性です。
+ユーザの現在の活動を中断させることなく、または中断させる可能性を最小限に抑えながら、新しいバージョンのソフトウェアをユーザーにリリースします。
 
-In a deployment pipeline, zero downtime is the feature that will enable you to eliminate the maintenance window.
-Instead of having a strict timeframe with in which you can deploy your releases, you might have the freedom to deploy new releases of software at any time of the day.
-Most companies have a maintenance window that occurs once a day (usually at night), making your smallest release cycle a single day.
-With zero downtime, you will have the ability to deploy multiple times per day, possibly with increasingly smaller batches of change.
+デプロイメントパイプラインでは、ゼロダウンタイムによってメンテナンスウィンドウをなくすことが可能です。
+リリース可能な厳密な時間枠を設ける代わりに、いつでも新しいリリースバージョンのソフトウェアをデプロイすることができます。
+ほとんどの企業では、1日に1回（通常は夜間）発生するメンテナンスウィンドウがあり、最小のリリースサイクルを1日にします。
+ゼロダウンタイムによって、1日に複数回デプロイすることができます。変更箇所をますます小さくすることが可能です。
